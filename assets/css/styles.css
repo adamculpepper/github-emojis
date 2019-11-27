@@ -1,0 +1,72 @@
+/* Globals */
+html, body {height:100%;}
+body {
+	display:flex;
+	flex-direction:column;
+	font-family:monospace, sans-serif;
+	color:#444;
+	background-color:#b8e9ff;
+	background-image:url(../img/noise.png);
+	-webkit-animation:background 20s infinite;
+			animation:background 20s infinite;
+}
+a, button {transition:all 0.50s;}
+a:hover {text-decoration:none;}
+
+.hidden {display:none;}
+.btn,
+.form-control {border-radius:0; border:0; background:rgba(0, 0, 0, 0.10);}
+.form-control {color:#000;}
+.form-control:focus {background:rgba(0, 0, 0, 0.30);}
+.ghost-value {display:none;}
+.red {background:lightsalmon!important;}
+.blue {background:lightblue!important;}
+.green {background:lightgreen!important;}
+
+/* ------------------------------ */
+
+/* Content Styles */
+header, footer {background:rgba(0, 0, 0, 0.30); padding:20px;}
+
+header, header a,
+footer, footer a {color:#ddd;}
+header a, footer a {display:inline-block; padding:5px 10px; background:rgba(255, 255, 255, 0.20);}
+header a:hover, footer a:hover {color:#fff; background:rgba(255, 255, 255, 0.30);}
+
+header .logo {font-size:30px;}
+header .logo a {font-weight:bold; letter-spacing:1px;}
+
+footer {font-size:25px; flex-shrink:0;}
+footer .row {width:100%;}
+
+#content {flex:1 0 auto; padding:20px; /*opacity:0;*/}
+
+/* ------------------------------ */
+
+/* Bootstrap Cards */
+.card {border-radius:0; border:0; background:rgba(0, 0, 0, 0.07);}
+.card .card-body {font-size:14px; line-height:40px;}
+.card .card-body img {margin-right:15px;}
+
+/* ------------------------------ */
+
+/* Scrollbar Styles */
+::-webkit-scrollbar			{background-color:#ddd; width:10px;}
+::-webkit-scrollbar-track	{background-color:#ddd;}
+::-webkit-scrollbar-thumb	{background-color:#aaa;}
+::-webkit-scrollbar-button	{display:none;}
+
+/* ------------------------------ */
+
+/* Background Animations */
+@-webkit-keyframes background {
+	0%   { background-color: #b8e9ff; } /* blue */
+	50%  { background-color: #cdb8ff; } /* purple */
+	100% { background-color: #b8e9ff; } /* blue */
+}
+
+@-webkit-keyframes underlines {
+	0%   { border-color: #4a93b1; } /* blue */
+	50%  { border-color: #977bd8; } /* purple */
+	100% { border-color: #4a93b1; } /* blue */
+}
